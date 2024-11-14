@@ -11,12 +11,13 @@ public class LibraryManagement {
      * this method is used for get the username and password for verification
      */
 
-
     public void init() {
         System.out.println("Enter User Name");
         String adminUserName = scanner.nextLine();
+        
         System.out.println("Enter Password");
         String adminPassword = scanner.nextLine();
+        
         if (Objects.equals(adminUserName, "nadimuthu") && adminPassword.equals("12345")) {
             listOption();
         } else
