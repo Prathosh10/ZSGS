@@ -12,17 +12,22 @@ public class UserInformation {
 
     public static void userEntry() {
         Scanner scanner = new Scanner(System.in);
+        
         System.out.println("Enter User's Name");
         String userName = scanner.nextLine();
+        
         System.out.println("Enter User's Gender");
         String gender = scanner.nextLine();
+        
         System.out.println("Enter Department");
         String department = scanner.nextLine();
+        
         System.out.println("Enter User Id");
         String userId = scanner.nextLine();
 
         User userEntry = new User(userName, gender, department, userId);
         users.add(userEntry);
+        
         System.out.println("List of Available users");
 
         for (User user : users) {
